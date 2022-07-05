@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Development</title>
+
+  <script src="./dist/umd/index.bundle.js"></script>
+
+</head>
+<body style="text-align: center;">
+
+<div id="test">
+  <button id="btnPay" type="button">Buy</button>
+</div>
+
+<script>
+  const element = document.getElementById('test');
+  var button = document.getElementById("btnPay");
+  button.addEventListener("click",function(e){
+    button.style.display= "none";
+    console.log('====TriePay = ', TriePay);
+
+    let destroy;
+    function onComplete(obj) {
+      console.log(obj.receiver, obj.order_id, obj.tx_hash, obj.chain_id, obj.quantity, obj.blockchain);
+      destroy();
+      alert("payment success!!!");
+      button.style.display= "";
+    }
+
+    destroy = TriePay.CreateWidget({
+      title: 'productA code',
+      order_id: 'productA-' + Math.floor(Math.random() * 1000000),
+      callback: 'https://yourdomain.xxx/callback',
+      receiver: '0xD33BD0b0d4AbC1C82d46595AA73BDb5e464F0c46',// [!!important]change it to yours and test
+      quantity: 1,
+      payments: [
+        {
+          blockchain: 'ethereum',
+          unit_price: 10000,
+          token: '0x95aD61b0a150d79219dCF64E1E6Cc01f0B64C4cE',
+        },
+        {
+          blockchain: 'bsc',
+          unit_price: 0.0001,
+          token: '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee',
+        },
+        {
+          blockchain: 'polygon',
+          unit_price: 0.01,
+          token: '0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063',
+        },
+        {
+          blockchain: 'fantom',
+          unit_price: 0.01,
+          token: '0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
+        },
+        {
+          blockchain: 'avalanche',
+          unit_price: 0.01,
+          token: '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E',
+        },
+      ],
+      container: element,
+      onComplete
+    });
+  });
+</script>
+
+</body>
+</html>
+
