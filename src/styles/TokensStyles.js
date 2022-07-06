@@ -203,7 +203,6 @@ export default () => {
             overflow-wrap: break-word;
             color: rgba(96, 101, 125, 1);
             font-size: 14px;
-            font-family: SFUIDisplay-Regular;
             line-height: 20px;
             text-align: center;
             overflow: hidden;
@@ -250,7 +249,6 @@ export default () => {
           overflow-wrap: break-word;
           color: rgba(25, 28, 50, 1);
           font-size: 20px;
-          font-family: SFUIDisplay-Regular;
           white-space: nowrap;
           line-height: 24px;
           text-align: center;

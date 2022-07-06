@@ -48,7 +48,6 @@ export default ()=>{
       overflow-wrap: break-word;
       color: rgba(25, 28, 50, 1);
       font-size: 20px;
-      font-family: SFUIDisplay-Regular;
       white-space: nowrap;
       line-height: 24px;
       text-align: center;
