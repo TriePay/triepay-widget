@@ -1,7 +1,7 @@
 {
   "name": "triepay-widget",
   "moduleName": "TriePay",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Web3 Crypto Payment",
   "main": "./dist/umd/index.js",
   "module": "./dist/esm/index.js",
