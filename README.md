@@ -21,7 +21,7 @@ you could install [MetaMask](https://metamask.io/download/) and create one.
 
 load the `triepay-widget` package via CDN:  
 
-`<script src="https://unpkg.com/triepay-widget@1.0.3/dist/umd/index.bundle.js"></script>`
+`<script src="https://unpkg.com/triepay-widget@1.0.4/dist/umd/index.bundle.js"></script>`
 
 or install `triepay-widget` via the package manager to your app:  
 
