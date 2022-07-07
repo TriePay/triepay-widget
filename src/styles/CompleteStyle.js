@@ -156,5 +156,11 @@ export default ()=>{
             height: 20px;
         }
 
+        .NormalCar {
+            margin: auto;
+            border-radius: 25px;
+            background-color: rgba(255, 255, 255, 1);
+            width: 325px;
+        }
   `)
 }

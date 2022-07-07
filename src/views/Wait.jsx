@@ -72,7 +72,7 @@ export default class Wait extends React.Component {
                 Processing
             </div>
             <div className={!!title ? 'BaseTopPadding MarginTop30' : 'BaseTopPadding MarginTop20'}/>
-            <div className={'ShadowCar'}>
+            <div className={'NormalCar'}>
                 <div className={'WaitShadowCarBox'}>
                     <div className={'SpaceBetweenItem'}>
                         <div className={'ItemName'}>Order ID</div>

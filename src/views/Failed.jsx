@@ -21,7 +21,7 @@ export default (props) => {
             <div className={!!title ? 'BaseTopPadding MarginTop30' : 'BaseTopPadding MarginTop20'}/>
             <img style={{ width: '150px', height: '145px', margin: 'auto', marginBottom: '15px'}} src={imgFailed}/>
 
-            <div className={'ShadowCar'}>
+            <div className={'NormalCar'}>
                 <div className={'FailedShadowCarBox'}>
                     <div className={'SpaceBetweenItem'}>
                         <div className={'ItemName'}>Transaction ID</div>
